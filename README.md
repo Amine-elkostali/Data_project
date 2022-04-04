@@ -2,6 +2,26 @@
 A data engineering Project 
 
 At this project, i've tried to download a CSV file from the website of the newzealand gouvernemant to create a dashboard that resume the income of this country from 2013 to 2020.
+For this project we're going to use :
+  - Terraform : Infrastructure-as-Code tool more info  here : https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_1_basics_n_setup/1_terraform_gcp/1_terraform_overview.md
+  - Airflow :https://github.com/DataTalksClub/data-engineering-zoomcamp/blob/main/week_2_data_ingestion/airflow/docs/1_concepts.md
+
+  - Dbt :dbt stands for data build tool. It's a transformation tool: it allows us to transform process raw data in our Data Warehouse to transformed data which can be later used by Business Intelligence tools and any other data consumers.
+
+dbt also allows us to introduce good software engineering practices by defining a deployment workflow:
+        - Develop models
+        - Test and document models
+        - Deploy models with version control and CI/CD.
+        for more infos go check : https://github.com/ziritrion/dataeng-zoomcamp/blob/main/notes/4_analytics.md
+        
+  - BigQuery : is a Data Warehouse solution offered by Google Cloud Platform.
+        -BQ is serverless. There are no servers to manage or database software to install; this is managed by Google and it's transparent to the customers.
+        -BQ is scalable and has high availability. Google takes care of the underlying software and infrastructure.
+        -BQ has built-in features like Machine Learning, Geospatial Analysis and Business Intelligence among others.
+        -BQ maximizes flexibility by separating data analysis and storage in different compute engines, thus allowing the customers to budget accordingly and reduce            costs.
+         -Some alternatives to BigQuery from other cloud providers would be AWS Redshift or Azure Synapse Analytics.
+  
+  - Data studio : A free datavisualisation tool
 
 we’re going to design a pipeline based on GCP (Google Cloud Platform) with the use of :
   - Terraform to create resources in GCP
