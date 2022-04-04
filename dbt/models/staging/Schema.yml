@@ -1,0 +1,12 @@
+version: 2 
+
+sources:
+    - name: staging
+      database: tesla-stocks-amine
+      schema: Dbt_finance_project
+
+      tables:
+          - name: finance
+      
+
+    
